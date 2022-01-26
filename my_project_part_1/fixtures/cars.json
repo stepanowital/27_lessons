@@ -1,0 +1,93 @@
+[
+  {
+    "model": "cars.car",
+    "pk": 1,
+    "fields": {
+      "slug": "kmz",
+      "name": "Самосвал",
+      "brand": "Самосвалкин",
+      "address": "Сикейроса, 16",
+      "description": "Большой самосвал отлично подойдёт для перевозки сыпучих грузов",
+      "status": "here",
+      "created": "2014-06-12 15:00:00"
+    }
+  },
+      {
+    "model": "cars.car",
+    "pk": 2,
+    "fields": {
+      "slug": "bmz",
+      "name": "bmz z6",
+      "brand": "bmz",
+      "address": "Ленина, 10",
+      "description": "Люксовый большой спортивный автомобиль",
+      "status": "sold",
+      "created": "2014-06-12 14:00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 3,
+    "fields": {
+      "slug": "mini",
+      "name": "мини",
+      "brand": "bmz",
+      "address": "Красносельское ш. 16",
+      "description": "Небольшой комфортный городской автомобиль",
+      "status": "not_available",
+      "created": "2014-06-12 12:00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 4,
+    "fields": {
+      "slug": "zaz",
+      "name": "Зазик",
+      "brand": "Самосвалкин",
+      "address": "Кулибина, 10",
+      "description": "Дешевый внедорожник для путешествий за грибами",
+      "status": "not_available",
+      "created": "2020-06-12 18:00:00"
+    }
+  },
+  {
+    "model": "cars.car",
+    "pk": 5,
+    "fields": {
+      "slug": "traktor",
+      "name": "Трактор",
+      "brand": "Самосвалкин",
+      "address": "Коменданский пр., 16",
+      "description": "Эффективная техника для поддержания своей фермы",
+      "status": "here",
+      "created": "2017-03-10 11:00:00"
+    }
+  },
+                      {
+    "model": "cars.car",
+    "pk": 6,
+    "fields": {
+      "slug": "minivan",
+      "name": "Минивэн",
+      "brand": "Жули",
+      "address": "Семёнова, 10",
+      "description": "Для комфортабельных поездок всей семьей",
+      "status": "here",
+      "created": "2019-03-09 10:00:00"
+    }
+  },
+                          {
+    "model": "cars.car",
+    "pk": 7,
+    "fields": {
+      "slug": "rocket",
+      "name": "ракета",
+      "brand": "Ракетостроение",
+      "address": "Смиирнова, 5",
+      "description": "Для полёта в космос и возможно обратно",
+      "status": "not_available",
+      "created": "2019-02-12 19:00:00"
+    }
+  }
+]

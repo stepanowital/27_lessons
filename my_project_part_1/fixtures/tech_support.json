@@ -1,0 +1,98 @@
+[
+  {
+    "model": "tech_support.statistic",
+    "pk": 1,
+    "fields": {
+      "store": "Пропал интернет",
+      "author": "Петр",
+      "status": "исполнено",
+      "day": "2022-01-09",
+      "reason":"R_t",
+      "timestamp": "2022-01-09 15:32:16"
+    }
+  },
+    {
+    "model": "tech_support.statistic",
+    "pk": 2,
+    "fields": {
+      "store": "Перебои со связью",
+      "author": "Иван",
+      "status": "Забыли",
+      "day": "2022-01-10",
+      "reason":"R_t",
+      "timestamp": "2022-01-10 11:20:16"
+    }
+  },
+    {
+    "model": "tech_support.statistic",
+    "pk": 3,
+    "fields": {
+      "store": "Ошибка в настройках",
+      "author": "Фёдор",
+      "status": "Исполнено",
+      "day": "2022-01-11",
+      "reason":"R_t",
+      "timestamp": "2022-01-11 14:21:16"
+    }
+  },
+    {
+    "model": "tech_support.statistic",
+    "pk": 4,
+    "fields": {
+      "store": "Не включается компьютер",
+      "author": "Сергей Петрович",
+      "status": "исполнено",
+      "day": "2022-01-07",
+      "reason":"R_t",
+      "timestamp": "2022-01-07 09:12:01"
+    }
+  },
+    {
+    "model": "tech_support.statistic",
+    "pk": 5,
+    "fields": {
+      "store": "Пропал звук на устройстве",
+      "author": "Василий",
+      "status": "исполнено",
+      "day": "2022-01-17",
+      "reason":"R_f",
+      "timestamp": "2022-01-17 19:15:16"
+    }
+  },
+    {
+    "model": "tech_support.statistic",
+    "pk": 6,
+    "fields": {
+      "store": "Устройство задымилось",
+      "author": "Светлана",
+      "status": "в работе",
+      "day": "2021-12-27",
+      "reason":"R_f",
+      "timestamp": "2021-12-27 15:43:16"
+    }
+  },
+    {
+    "model": "tech_support.statistic",
+    "pk": 7,
+    "fields": {
+      "store": "Отсутствует соединение",
+      "author": "Петр",
+      "status": "Направлен мастер",
+      "day": "2022-01-15",
+      "reason":"R_i",
+      "timestamp": "2022-01-15 11:10:16"
+    }
+  },
+    {
+    "model": "tech_support.statistic",
+    "pk": 8,
+    "fields": {
+      "store": "Проблема с настройками",
+      "author": "Светлана",
+      "status": "исполнено",
+      "day": "2022-01-20",
+      "reason":"R_t",
+      "timestamp": "2022-01-20 13:34:16"
+    }
+  }
+]

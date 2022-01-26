@@ -1,0 +1,86 @@
+[
+  {
+    "model": "courses.course",
+    "pk": 1,
+    "fields": {
+      "slug": "python",
+      "author": "Иван Иванович",
+      "description": "Отличный курс по бэкэнд-разработке",
+      "start_day": "2021-09-01",
+      "status": "started",
+      "created": "2021-05-20"
+    }
+  },
+    {
+    "model": "courses.course",
+    "pk": 2,
+    "fields": {
+      "slug": "java",
+      "author": "Петр Игоревич",
+      "description": "Курс по фуллстек разработке",
+      "start_day": "2022-03-01",
+      "status": "new",
+      "created": "2022-01-09"
+    }
+  },
+    {
+    "model": "courses.course",
+    "pk": 3,
+    "fields": {
+      "slug": "qa",
+      "author": "Сергей Иванович",
+      "description": "Научим тестированию от А до Я",
+      "start_day": "2022-03-05",
+      "status": "new",
+      "created": "2022-01-15"
+    }
+  },
+    {
+    "model": "courses.course",
+    "pk": 4,
+    "fields": {
+      "slug": "c_sharp",
+      "author": "Сергей Фёдорович",
+      "description": "Сложная программа для разработчиков с опытом",
+      "start_day": "2021-01-20",
+      "status": "closed",
+      "created": "2020-03-02"
+    }
+  },
+    {
+    "model": "courses.course",
+    "pk": 5,
+    "fields": {
+      "slug": "golang",
+      "author": "Иван Петрович",
+      "description": "Изучаем современный язык для бэкенда",
+      "start_day": "2022-02-10",
+      "status": "new",
+      "created": "2022-01-15"
+    }
+  },
+    {
+    "model": "courses.course",
+    "pk": 6,
+    "fields": {
+      "slug": "exl",
+      "author": "Илья Фёдорович",
+      "description": "Изучаем электронные таблицы",
+      "start_day": "2019-06-10",
+      "status": "closed",
+      "created": "2019-01-09"
+    }
+  },
+    {
+    "model": "courses.course",
+    "pk": 7,
+    "fields": {
+      "slug": "vba",
+      "author": "Федор гГригорьевич",
+      "description": "Электронные таблицы и макросы",
+      "start_day": "2021-05-01",
+      "status": "started",
+      "created": "2022-01-15"
+    }
+  }
+]
