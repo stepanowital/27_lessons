@@ -145,6 +145,19 @@ class DataBaseTestsMixin:
                 f"тип {type_name}",
             )
 
+    def django_field_checker(self, current_fields, expected_fields, field_type):
+        for attribute in expected_fields:
+            expected_field = expected_fields.get(attribute)
+            field = current_fields.get(attribute)
+            self.assertIsInstance(field, field_type,
+                                  f"Проверьте, что у поля {field.name} правильно указан тип поля"
+                                  )
+            if expected_field:
+                for attribute in expected_field:
+                    self.assertTrue(
+                        getattr(field, attribute) == expected_field.get(attribute),
+                        f"Проверьте, что у поля {field.name} правильно указано свойство {attribute}"
+                    )
 
 class ResponseTestsMixin:
     def _required_args_checker(self: TestCase, *args, **kwargs):
@@ -310,6 +323,14 @@ class ResponseTestsMixin:
                 f"возвращает объекты, которые содержат в себе поле {attribute}",
             )
 
+    def check_unexpected_attributes(self, obj, unexpected_attributes):
+        for attribute in unexpected_attributes:
+            self.assertNotIn(
+                attribute,
+                obj,
+                f"Проверьте, что ответ на GET-запрос по адресу {self.url} "
+                f"возвращаются поля в соответствии со спецификацией - {attribute} является лишним",
+            )
 
 class SchemaTestsMixin(ResponseTestsMixin):
     def schema_is_valid(self, **kwargs):
