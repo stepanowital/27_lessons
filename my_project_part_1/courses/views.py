@@ -26,7 +26,7 @@ def new_courses(request):
 
 
 def get_course(request, slug):
-    # TODO напишите здесь view-функцию (задание get_course)
+    # TODO напишите здесь view-функцию (задание find_by_name)
     pass
 
 
