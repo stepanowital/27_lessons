@@ -1,15 +1,19 @@
 import os
 
 from django.core.management.base import BaseCommand
+from django.core.management import call_command
 
 
 class Command(BaseCommand):
-    help = "Create fixtures from json file," "createfixtures [filename] [app.model]"
+    help = "Loads fixtures from fixtures dir"
+    fixtures_dir = 'fixtures'
+    loaddata_command = 'loaddata'
+    filenames = [
+        "tech_support.json",
+        "courses.json",
+        "cars.json",
+    ]
 
     def handle(self, *args, **options):
-        # tech_support fixtures:
-        os.system("python manage.py loaddata fixtures/tech_support.json")
-        # courses fixtures:
-        os.system("python manage.py loaddata fixtures/courses.json")
-        # cars fixtures:
-        os.system("python manage.py loaddata fixtures/cars.json")
+        for fixture_filename in self.filenames:
+            call_command(self.loaddata_command, os.path.join(self.fixtures_dir, fixture_filename))
