@@ -8,7 +8,7 @@ class CarView(View):
     def get(self, request, pk):
         car = get_object_or_404(Car, id=pk)
 
-        return JsonResponse({
+        response = {
             "id": car.id,
             "slug": car.slug,
             "name": car.name,
@@ -17,4 +17,5 @@ class CarView(View):
             "description": car.description,
             "status": car.status,
             "created": car.created,
-        })
+        }
+        return JsonResponse(response, safe=False, json_dumps_params={"ensure_ascii": False, "indent": 4})
